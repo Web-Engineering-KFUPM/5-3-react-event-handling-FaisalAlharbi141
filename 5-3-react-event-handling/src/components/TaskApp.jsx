@@ -14,13 +14,14 @@ export default function TaskApp() {
   
   const handleDelete = (id) => {
     // TODO: filter tasks by id to remove the clicked one
-    <button onClick={}></button>
+  setTasks(prev => prev.filter(t => t.id !== id));
+  
   };
 
   
   const handleClearAll = () => {
     // TODO: set tasks to empty array
-    <button onClick={handleClearAll}>Clear All</button>
+    
   };
 
   return (
